@@ -4,5 +4,7 @@ g++ pong.o -o Build\pong.exe icon.res -LD:\SFML-2.4.2\lib -lsfml-graphics -lsfml
 cd Build
 start pong.exe
 iscc ..\installerscript.iss
-
- 
+cd ..\
+git commit -m "Update"%DATE%%TIME% --all
+git pull
+git push
