@@ -5,6 +5,6 @@ cd Build
 start pong.exe
 iscc ..\installerscript.iss
 cd ..\
-git commit -m "Update"%DATE%%TIME% --all
+git commit -m "Update" --all
 git pull
 git push
