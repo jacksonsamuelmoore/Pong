@@ -45,7 +45,10 @@
         {
             "name": "Win32",
             "includePath": [
-                "${workspaceRoot}"
+                "${workspaceRoot}",
+                "${workspaceRoot}/Headers",
+                "D:/Program files/mingw-w64/x86_64-7.1.0-win32-seh-rt_v5-rev2/mingw64/x86_64-w64-mingw32/include",
+                "D:/SFML-2.4.2/include"
             ],
             "defines": [
                 "_DEBUG",
