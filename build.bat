@@ -10,5 +10,8 @@ iscc ..\..\Repo\installerscript.iss
 cd ..\..\
 copy Build_Latest\Executable\pong_installer.exe "Builds\Executable\pong_installer_%DATE:~7,2%.%DATE:~4,2%.%DATE:~-4%.exe"
 git commit -m "Build %DATE% %TIME%" --all
-git pull
-git push
+git pull sourceforge master
+git push sourceforge master
+pscp  Build_Latest/Executable/pong_installer.exe jmanmini@frs.sourceforge.net:/home/frs/project/jacksonpong/
+pscp "Builds\Zipped\Build %DATE:~7,2%.%DATE:~4,2%.%DATE:~-4%.zip" jmanmini@frs.sourceforge.net:/home/frs/project/jacksonpong/Zipped
+pscp "Builds\Executable\pong_installer_%DATE:~7,2%.%DATE:~4,2%.%DATE:~-4%.exe" jmanmini@frs.sourceforge.net:/home/frs/project/jacksonpong/Executable 
